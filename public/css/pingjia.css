@@ -1,0 +1,387 @@
+*{padding: 0;margin: 0; }
+  /* .container-evaluate{
+    width: 610px !important;  
+    margin-left: 10%;
+    position: relative;
+
+  } */
+  .reserve{
+    width: 370px;height: 500px;
+    border: 1px solid#ccc;
+    margin-left: 700px;
+    margin-top: 50px;
+    padding: 18px 24px 18px 24px;
+  }
+  .text{
+    width: 340px;height: 25px;
+    line-height: 25px;
+  }
+  .reserve>:nth-child(2)>span{
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.33333em !important;
+    color: rgb(118, 118, 118) !important;
+    margin-right: 5px;
+  }
+  .contain{
+    width: 610px;
+    margin-left: 20px;
+  }
+  .header{
+    width: 391px;height: 40px;
+    line-height: 40px;
+    
+    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+    font-size: 24px;
+    font-weight: 800 ;
+    
+    color: rgb(72, 72, 72) ;
+    padding-top: 2px ;
+    padding-bottom: 2px;
+    margin: 0px
+  }
+  .head{
+    width: 600px;height: 45px;
+  }
+  .head>:first-child{
+    width: 391px;height: 40px;
+    display: inline-block;
+  }
+  .head>:last-child{
+    display: inline-block;
+  }
+  .head :last-child>input{
+    width: 180px;height: 40px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 40px;
+    font-family:Circular, "PingFang-SC", "Hiragino Sans GB", "微软雅黑", "Microsoft YaHei", "Heiti SC" !important;
+    color: #484848 !important;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  .head>:last-child>input:focus{
+    border: 1px solid rgb(0, 132, 137);
+    border-radius: 5px;
+  }
+  .body{margin-top: 25px;}
+  .body>div{
+    width: 290px;height: 93px;
+    display: inline-block;
+  }
+  hr{
+    width: 585px;
+    color: #ccc;
+  }
+  .body>div>div{
+    width: 142px;height: 22px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .foot>div{
+    width: 585px;height: 200px;
+    /* border: 1px solid #ccc; */
+    margin-top: 20px;
+    /* position: relative; */
+  }
+  .head>:nth-child(2){
+    position: relative;
+    vertical-align: top;
+  }
+  .head img{
+    right: 10px;
+    top:5px;  
+    cursor: pointer;
+  }
+  .foot>div>:nth-child(2){
+    margin-top: 15px;
+    
+  }
+  .foot>div>:nth-child(2)>div{
+    width: 120px;height: 30px;
+    display: inline-block;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.375em !important;
+    color: rgb(72, 72, 72);
+    margin-left: 8px;
+  }
+  span{
+    margin-left: 8px;
+  }
+  .foot>div>:nth-child(3){
+    margin-top: 5px;
+  }
+  form{
+    width: 320;height: 160px;
+  }
+  .form-head{
+    width: 320px;height: 160px;
+  }
+  .inp1>input{
+    width: 145px;height: 40px;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #ccc;
+    border-right: 0;
+    padding-left: 8px;
+    font-size: 16px;
+  }
+  .inp2>input{
+    width: 145px;height: 40px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-left: 0;
+    padding-left: 8px;
+    font-size: 16px;
+    margin-left: -15px;
+  }
+  .inp1>input:focus{
+    border: 1px solid rgb(0, 132, 137);
+  }
+  .inp2>input:focus{
+    border: 1px solid rgb(0, 132, 137);
+  }
+  .inp1,.inp2{
+    width: 150px;height: 40px;
+    display: inline-block;
+    line-height: 40px;
+  }
+  .pno{
+    width: 30px;height: 40px;
+    display: inline-block;
+    line-height: 40px; 
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    top: 1px;
+    left: -10px; 
+  }
+  .da{
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  .inp{
+    width: 340px;height: 42px;
+  }
+  .date{
+    position: absolute;
+    width: 340px;
+    border: 1px solid #ccc;
+    display: none;
+  }
+  .date1{
+    position: absolute;
+    width: 325px;
+    border: 1px solid #ccc;
+    display: none;
+  }
+  /* 日历 */
+  .calendar-container{
+    width: 323px;
+    background: white
+  }
+  .calendar-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .year{
+    text-align: center;
+    line-height: 30px;
+
+  }
+  .year1{
+    text-align: center;
+    line-height: 30px;
+  
+  }
+  .btn{
+    width: 47.42px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 0 !important;
+  }
+  .calendar-body{
+    border-right: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+  }
+  .week-row, .day-rows, .day-row{
+    overflow: hidden;
+  }
+  .box{
+    float: left;
+    width: 46px;
+    height: 46px;
+    border-top: 1px solid #9e9e9e;
+    border-left: 1px solid #9e9e9e;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    background:white;
+  }
+  .box:hover{
+    background:#ccc;
+  }
+  .week{
+    background: #00bcd4;
+  }
+  .day :hover{
+    background:#ccc;
+  }
+  .sel{
+    width: 320px;height: 70px;
+  }
+  .sel>:nth-child(2)>.button{
+    width: 320px;height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    color: rgb(72, 72, 72);
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .sel>:nth-child(2)>.button>div{
+    width: 278px;height: 40px;
+    display: inline-block;
+    text-align: center;
+    /* margin-top: -10px */
+  }
+  .people-count{
+    vertical-align: top;
+  }
+  .sel-people{
+    width: 320px;height: 283px;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    background: white
+  }
+  .sel-people>div{
+    width: 294px;height: 44px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .sel-people>div>div{
+    display: inline-block;
+  }
+  .sel-people>div>:first-child{
+    width: 165px;height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: rgb(72, 72, 72);
+    font-weight: 600;
+  }
+  .sel-people>div>:last-child{
+    width: 120px;height: 44px;
+    line-height:44px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .sel-people>div>:nth-child(2)>div{
+    width: 32px;height: 32px;
+    display: inline-block;
+    vertical-align: top;
+    
+  }
+  .sel-people>div>:nth-child(2){
+    position: relative;
+  }
+  .sel-people>div>:nth-child(2)>:nth-child(1){
+    position: absolute;
+    top: 6px;
+    left:0px;
+    cursor: pointer;
+  }
+  .sel-people>div>:nth-child(2)>:nth-child(3){
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    cursor: pointer;
+ }
+ .alert{
+   text-align: center;
+   font-size: 14px;
+   color: #484848;
+   margin-top: 15px;
+ }
+ .close{
+   text-align: right;
+   color: #008489 !important;
+   /* margin-top: 25px !important; */
+   padding-right: 30px !important;
+   font-size: 18px !important;
+   cursor: pointer !important;
+ }
+ .pay{
+   width: 320px;height: 40px;
+   margin-top: 40px !important;
+ }
+ .pay>.button1{
+    width: 320px;height: 40px;
+    background:  rgb(255, 90, 95);
+    border: 0;
+    border-radius: 5px;
+  
+    top: 10px;
+ }
+ .button1>image{
+   opacity: 0.5;
+   position: relative;
+   top: -5px
+ }
+ .pay>.button1>div{
+   width: 320px;height: 22px;
+   margin-top: 9px !important;
+   text-align: center !important;
+   color: white;
+   background:rgb(255, 90, 95);
+   font-size: 16px !important;
+   font-weight: 800 !important;
+   line-height: 22px !important;
+   cursor: pointer;
+ }
+ .report{
+   width: 320px;
+   text-align: center !important;
+ }
+ .report>a{
+   color: #484848 !important;
+   text-decoration: none !important;
+ }
+ .report>a:hover{
+   text-decoration: underline;
+ }
+ .reserve>:nth-child(1){
+   font-size: 22px;
+   color: rgb(0, 132, 137);
+ }
+ .reserve>:nth-child(1)>:nth-child(1){
+   margin: 0;
+ }
+ .reserve>:nth-child(1)>:nth-child(2){
+   font-size: 14px;
+   text-decoration: line-through;
+   color: #484848;
+ }
+ .reserve>:nth-child(1)>:nth-child(3){
+  font-size: 14px;
+  color:black;
+ }
+ .reserve>:nth-child(3){
+   margin: 15px 0 15px 0;
+   font-size: 12px;
+ }
+ .reserve>:nth-child(4){
+   width: 320px !important;
+   color: #ccc !important;
+ }
+ .foot img{
+   vertical-align: top;
+ }
+ .bot{
+  vertical-align: top;
+ }

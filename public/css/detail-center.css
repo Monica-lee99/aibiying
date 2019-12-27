@@ -1,0 +1,177 @@
+
+/* 脚部 */
+    .footer_e span{
+        font-size: 14px;
+        line-height: 1.125rem;
+        font-weight: 500;
+    }
+    .footer_e button{
+         border: none;
+        outline: none;
+        background: none;
+        /* padding: 0 5px 0 0; */
+        padding-top:0; 
+        padding-bottom:3px; 
+        cursor: pointer;
+        color: rgb(0, 132, 137);
+        font-size: 18px;
+        line-height: 1.125rem;
+        font-weight: 700;
+    }
+    .footer_e img{
+        width: 24px;
+        height: 24px;
+     }
+    .footer_six{
+        font-size: 16px;
+        line-height: 1.375em;
+        font-weight: 400;
+
+    }
+    .footer_six1 .footer_six3{
+        text-align: left;
+        font-size: 16px;
+        color: #000;
+        line-height: 1.125rem;
+        font-weight: 600;
+
+    }
+    .footer_six1 .footer_six2{
+        text-align: left;
+        font-size: 18px;
+        color: #000;
+        line-height: 1.125rem;
+        font-weight:600;
+
+    }
+
+    .footer_f .footer_f1{
+        font-size: 16px ;
+        font-weight: 600 ;
+    }
+    .footer_t1{
+        background:#ccc;
+
+    }
+    .footer_t1>.btn{
+         border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        color: rgb(0, 132, 137);
+        font-size: 18px;
+        line-height: 1.125rem;
+        font-weight: 700;
+
+    }
+    .footer_two_bottom{
+        margin-top:5px ;
+    }
+    .footer_two_bottom span{
+        font-size:14px;
+        font-weight: 600; 
+    }
+    .footer_two_top>.btn{
+        border: none;
+        outline: none;
+        background: none;
+        /* padding: 0 5px 0 0; */
+        padding-top:0; 
+        padding-bottom:3px; 
+        cursor: pointer;
+        color: rgb(0, 132, 137);
+        font-size: 18px;
+        line-height: 1.125rem;
+        font-weight: 700;
+         
+    }
+    .footer_two_top>.footer_two_top1{
+        font-size: 16px ;
+        font-weight:800 ;
+        line-height: 1.375em;
+        color: rgb(72, 72, 72) ;
+        margin: 0;
+    }
+    .footer>.footer_one img{
+        padding: 0.1rem;
+        background-color: lightgreen;
+        border: 1px solid  lightgreen;
+        border-radius: 2rem;
+        /* max-width: 100%; */
+        height: auto;
+    }
+/* ↑ */
+    .right{
+        border: 1px solid lightblue;
+    }
+    .one span {
+            cursor: pointer;
+            /* background: transparent; */
+            font-size: 15px;
+            color: rgb(0, 132, 137);
+            font-weight: 800;   
+            line-height: 1.125rem;
+            padding: 3px;
+    }
+    .one .one_font:hover{
+        border-bottom:2px solid  #000;
+    }
+
+    .two{ 
+        font-size: 12px;
+       color: rgb(113, 78, 51);
+       font-weight: 800;
+       line-height: 1.33333em;
+       /* margin-top:5px ; */
+    }
+  
+    .three .three_font{
+        word-wrap: break-word !;
+        font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" ;
+        font-size: 32px ;
+        font-weight: 800 ;
+        line-height: 1.125em ;
+        color: rgb(72, 72, 72) ;
+        padding-top: 6px ;
+        margin: 0px ;
+    }
+    .img_size img{
+        height: 16px;
+        vertical-align: middle;
+    }
+    .img_size span{
+        word-wrap: break-word ;
+        font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" ;
+        font-size: 16px ;
+        font-weight: 500 ;
+        line-height: 1.375em ;
+        color: rgb(72, 72, 72) ;
+    }
+    .four_font span{
+        word-wrap: break-word;
+        font-size: 14px;
+        font-weight: 400 ;
+        line-height: 1.375em ;
+        color: rgb(72, 72, 72) ;
+        margin: 0px ;   
+        padding-left:15px;
+        padding-right:15px; 
+    }
+    .four_font1{
+        background:cadetblue;
+        border-radius:30px; 
+    }
+    .four_font2{
+         background:gainsboro;
+         border-radius:30px; 
+    }
+    .four_font3{
+         background:gainsboro;
+            border-radius:30px; 
+    }
+    .four_font{
+        margin-bottom:45px; 
+    }
+    .row{
+        position: relative;
+    }

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 头部 -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- 轮播图 -->
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/search.css">
+  <!-- 中间部分 -->
+  <link rel="stylesheet" href="css/body.css">
+  <!-- 搜索 -->
+  <link rel="stylesheet" href="css/xiaoyuan.css">
+  <!-- 尾部 -->
+  <link rel="stylesheet" href="css/footer.css">
+<style>
+#goLink {
+    display: none;
+    position: fixed; /*说只要加了position，元素自己就变成了块状*/
+    bottom: 200px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: red;
+    border-radius: 50%;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+#goLink:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+</style>
+</head>
+<body>
+<!-- *************************返回顶部按钮*********************************** -->
+<a href="javascript:;" id="goLink">顶部</a>
+<!--********************** head部分 *******************-->
+<!-- 轮播图 -->
+<div class="banner clearfix">
+    <ul class="banner-img">
+        <li style="opacity: 1;z-index: 1;">
+            <img src="images/banner-1.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>元旦精彩特惠季<br/> 团聚尽在爱彼迎</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/banner-2.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>周末出逃,让心放假<br/> 热门房源限时推荐</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/banner-3.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>奇遇杭州<br/> 让心荡漾忆童年</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/banner-4.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>飞跃赤道过夏天<br/> 阳光海风温暖亲子时光</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/banner-5.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>爱彼迎 X QQ音乐<br/> 跟随国风歌单游六都</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="images/banner-6.jpg" alt="">
+            <div class="wrapper">
+                <div class="font layout">
+                    <h1>南方房源推荐<br/> 温暖南国,活力过冬</h1>
+                    <button>查看合集</button>
+                </div>
+            </div>
+        </li>
+    <li>
+        <img src="images/banner-7.jpg" alt="">
+        <div class="wrapper">
+            <div class="font layout">
+                <h1>跳上高铁去旅行<br/> 游南逛北过冬天</h1>
+                <button>查看合集</button>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="control control-left fl">&lt;</div>
+<div class="control control-right fr">&gt;</div>
+</div>
+<!-- 头部 -->
+<header class="header clearfix">
+<div class="header-left fl">
+    <div class="logo fl">
+        <a href=""><img src="images/logo-svg.svg" alt=""></a>
+    </div>
+    <div class="search fl">
+        <div class="search-img">
+            <svg viewBox="0 0 16 16" role="presentation" aria-hidden="true" focusable="false" style="height:18px;width:18px;display:block;fill:currentColor"><path fill="#484848" d="m2.5 7c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5m13.1 6.9-2.8-2.9c.7-1.1 1.2-2.5 1.2-4 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.5 0 2.9-.5 4-1.2l2.9 2.8c.2.3.5.4.9.4.3 0 .6-.1.8-.4.5-.5.5-1.2 0-1.7"></path></svg>
+        </div>
+        <input type="text" placeholder="搜“波士顿”试试">
+    </div>
+</div>
+
+
+<div class="header-right fr">
+    <ul>
+        <li class="fl"><a href="#">简体中文 (CN)</a></li>
+        <li class="fl"><a href="#">￥ CNY</a></li>
+        <li class="fl"><a href="#">手机端</a></li>
+        <li class="fl"><a href="#">出租房源</a></li>
+        <li class="fl"><a href="#">开展体验</a></li>
+        <li class="fl"><a href="#">故事</a></li>
+        <li class="fl"><a href="#">历史足迹</a></li>
+        <li class="fl"><a href="#">帮助</a></li>
+        <li class="fl"><a href="#" class="reg">注册</a></li>
+        <li class="fl"><a href="#" class="login">登录</a></li>
+    </ul>
+</div>
+</header>
+<!-- 目的地搜索框 -->
+<div class="container">
+  <div class="area">
+      <select name="" id="" class="sel">
+        <option value="">深圳</option>
+        <option value="">北京</option>
+        <option value="">上海</option>
+        <option value="">广州</option>
+      </select>
+  </div>
+  <div class="input">
+    <img src="./img/位置 (1).png" alt="" width="30px" height="30px" style="position: absolute">
+    <input class="inp" type="text" placeholder="输入目的地、城市或景点">
+    <div class="adv">
+      <p>温馨提示：您还可以输入城市 + 景点、区县名进行搜索，如：巴黎 埃菲尔铁塔</p>
+      <hr>
+      <h1>国内热门城市</h1><br>
+      <span>北京</span>
+      <span>上海</span>
+      <span>深圳</span>
+      <span>成都</span>
+      <span>杭州</span>
+    </div>
+  </div>
+  <div class="date">
+    <img src="./img/日历.png" alt="" width="30px" height="30px" style="position: absolute">
+    <input class="dat" type="text" placeholder="入住日期-退房日期" readonly >
+    <div>
+      <div class="select-date">
+      <div class="date-header1">
+        <div class="pno"><span class="leftYear">&lt;&lt;</span>&nbsp;&nbsp;&nbsp;<span class="leftMonth">&lt;</span></div>
+        <span class="year1"></span>年&nbsp;&nbsp;&nbsp;<span class="month1"></span>月
+      </div>
+      <div class="date-header2">
+        <span class="year2"></span>年&nbsp;&nbsp;&nbsp;<span class="month2"></span>月
+        <div class="pno"><span class="rightMonth">&gt;</span>&nbsp;&nbsp;&nbsp;<span class="rightYear">&gt;&gt;</span></div>          
+      </div>
+      <div class="tab1">
+        <div class="a">
+          <div>一</div>
+          <div>二</div>
+          <div>三</div>
+          <div>四</div>
+          <div>五</div>
+          <div>六</div>
+          <div>日</div>
+        </div>
+        <div class="rows"></div>
+      </div>
+      <div class="tab2">
+        <div class="a">
+          <div>一</div>
+          <div>二</div>
+          <div>三</div>
+          <div>四</div>
+          <div>五</div>
+          <div>六</div>
+          <div>日</div>
+        </div>
+        <div class="rows1"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="search">
+    <div class="searc">
+      <button type="submit" class="sear">搜索</button>
+    </div>
+  </div>
+</div>  
+<!--*************** body部分 ****************-->
+
+
+    <!-- 特惠房源 -->
+    <div class="body">
+        <div class="top-title">
+          <h3>冬季特惠房源</h3>
+          <span>特惠房源低至7折</span>
+        </div>
+        <!-- 城市按钮 -->
+        <div class="tabs">
+          <ul class="tab">
+            <li><a class="btn" data-click="tab" data-id="content1" href="javascript:;">深圳</a></li>
+            <li><a class="btn" data-click="tab" data-id="content2" href="javascript:;">北京</a></li>
+            <li><a class="btn" data-click="tab" data-id="content3" href="javascript:;">上海</a></li>
+            <li><a class="btn" data-click="tab" data-id="content4" href="javascript:;">广州</a></li>
+          </ul>
+        </div>
+        <!-- 图片 -->
+        <div class="out-ref">
+          <div class="in-ref" id="content1">
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h101.acc64627.jpg" alt="">
+                    <dd>(五星,长康)清迈慧慧兰娜河畔温泉度假酒店 RatiLanna</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h102.c8be1d36.jpg" alt="">
+                    <dd>(四星,奥南海滩)甲米萨拉塔拉伊度假酒店 Holiday Inn Resort</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h103.83142787.jpg" alt="">
+                    <dd>【克莱因】近福田中心区|双地铁口|美食街道|藤编吊椅|巨幕影院|loft</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h104.dc11156f.jpg" alt="">
+                    <dd>【HO ME】一居室·温馨森调·阳光明媚·临地铁·福田中心价格</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="in-ref" id="content2">
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h101.acc64627.jpg" alt="">
+                    <dd>(四星,奥南海滩)甲米萨拉塔拉伊度假酒店 Holiday Inn Resort</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h102.c8be1d36.jpg" alt="">
+                    <dd>(五星,长康)清迈慧慧兰娜河畔温泉度假酒店 RatiLanna</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h103.83142787.jpg" alt="">
+                    <dd>【克莱因】近福田中心区|双地铁口|美食街道|藤编吊椅|巨幕影院|loft</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+            <div class="ref">
+              <dl>
+                <dt>
+                  <a href="">
+                    <img src="img/index-h104.dc11156f.jpg" alt="">
+                    <dd>【HO ME】一居室·温馨森调·阳光明媚·临地铁·福田中心价格</dd>
+                  </a>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="in-ref" id="content3">
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h101.acc64627.jpg" alt="">
+                      <dd>(五星,长康)清迈慧慧兰娜河畔温泉度假酒店 RatiLanna</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h102.c8be1d36.jpg" alt="">
+                      <dd>(四星,奥南海滩)甲米萨拉塔拉伊度假酒店 Holiday Inn Resort</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h103.83142787.jpg" alt="">
+                      <dd>【克莱因】近福田中心区|双地铁口|美食街道|藤编吊椅|巨幕影院|loft</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h104.dc11156f.jpg" alt="">
+                      <dd>【HO ME】一居室·温馨森调·阳光明媚·临地铁·福田中心价格</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+          </div>
+          <div class="in-ref" id="content4">
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h101.acc64627.jpg" alt="">
+                      <dd>(五星,长康)清迈慧慧兰娜河畔温泉度假酒店 RatiLanna</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h102.c8be1d36.jpg" alt="">
+                      <dd>(四星,奥南海滩)甲米萨拉塔拉伊度假酒店 Holiday Inn Resort</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h103.83142787.jpg" alt="">
+                      <dd>【克莱因】近福田中心区|双地铁口|美食街道|藤编吊椅|巨幕影院|loft</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+              <div class="ref">
+                <dl>
+                  <dt>
+                    <a href="">
+                      <img src="img/index-h104.dc11156f.jpg" alt="">
+                      <dd>【HO ME】一居室·温馨森调·阳光明媚·临地铁·福田中心价格</dd>
+                    </a>
+                  </dt>
+                </dl>
+              </div>
+          </div>
+        </div> 
+        <div class="d1">
+          <a href="">查看更多房源 ></a>
+        </div>
+        <!-- 可能想去 -->
+        <div>
+          <div class="top-title">
+            <h3>你可能也想去</h3>
+            <span>这个时节，同城的人都爱去</span>
+          </div>
+          <!-- 推荐图片 -->
+          <div class="season">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="img/a8a25fe3-3fa1-44bf-8f68-04f465993f95.jpg" alt="">
+                  <span>深圳<br>均价 ¥225/晚</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/e7b2259c-269e-4057-8a98-17cd421a80de.jpg" alt="">
+                <span>广州<br>均价 ¥176/晚</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/670fc55b-795a-4503-b175-ed346a87044f.jpg" alt="">
+                  <span>台北<br>均价 ¥192/晚</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/0aac97b6-429b-4be5-bfd8-68b0544411b3.jpg" alt="">
+                <span>成都<br>均价 ¥156/晚</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="img/ac4cf81c-fd48-4def-9ad5-1b49ade1850a.jpg" alt="">
+                  <span>厦门<br>均价 ¥175/晚</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 旅行安全 -->
+        <div class="gra">
+          <div class="top-title"> 
+            <h3>xxx旅行保障</h3>
+          </div>
+          <div class="gra-item">
+            <div class="gra-img">
+            <img src="img/IndicatorHostGuarantee.20c37f9e.svg" alt="">
+            </div>
+            <div class="gra-font">
+              <span>安心房源保障 人工审核所有中国房源页面信息，入住更放心</span>
+            </div>
+            <div class="gra-img">
+              <img src="img/IndicatorCXinsurance.32cdc2f5.svg" alt="">
+            </div>
+            <div class="gra-font">
+              <span>专业中文客服 (86) 400-xxx-xxxx、(86) 010-xxxx-xxxx,24小时服务</span>
+            </div>
+            <div class="gra-img">
+              <img src="img/IndicatorExperienceInsurance.903112a9.svg" alt="">
+            </div>
+            <div class="gra-font">
+              <span>旅行安全保障 多重风险控制设计，全方位保障您的行程安全</span>
+            </div>
+          </div>
+        </div>
+        <!-- 客户故事 -->
+        <div class="story">
+        <div class="top-title"> 
+            <h3>精彩旅行故事</h3>
+        </div>
+        <div class="cut">
+          <div class="cut-evl">
+            <div class="cut-feel">
+              <a href="">
+                <div class="cut-pic"><img src="img/广州.jpg" alt=""></div>
+                <div class="cut-say"><span>广州  </span><span>房东说，欢迎体验你的“珠江之夜”</span></div>
+                <div class="cut-img">
+                  <div class="cut-headImg"><img src="img/头像1.png" alt=""></div>
+                  <div><img src="img/点赞.png" alt="" class="support">132</div>
+                  <div><img src="img/留言.png" alt="">32</div>
+                </div>
+              </a>
+            </div>
+            <div class="cut-img"></div>
+          </div>
+          <div class="cut-evl">
+            <div class="cut-feel">
+              <a href="">
+                <div class="cut-pic"><img src="img/台州.jpg" alt=""></div>
+                <div class="cut-say"><span>台州  </span><span>去这家深藏最美渔村的海边石墅赏一场不容错过的东海日出！</span></div>
+                <div class="cut-img">
+                  <div class="cut-headImg"><img src="img/头像02.png" alt=""></div>
+                  <div><img src="img/点赞.png" alt="" class="support">36</div>
+                  <div><img src="img/留言.png" alt="">12</div>
+                </div>
+              </a>
+            </div>
+            <div class="cut-img"></div>
+          </div>
+          <div class="cut-evl">
+            <div class="cut-feel">
+              <a href="">
+                <div class="cut-pic"><img src="img/上海.jpg" alt=""></div>
+                <div class="cut-say"><span>上海  </span><span>一秒穿越到18世纪的欧洲</span></div>
+                <div class="cut-img">
+                  <div class="cut-headImg"><img src="img/头像3.png" alt=""></div>
+                  <div><img src="img/点赞.png" alt="" class="support">556</div>
+                  <div><img src="img/留言.png" alt="">94</div>
+                </div>
+              </a>
+            </div>
+            <div class="cut-img"></div>
+          </div>
+          <div class="cut-evl">
+            <div class="cut-feel">
+              <a href="">
+                <div class="cut-pic"><img src="img/青岛.jpg" alt=""></div>
+                <div class="cut-say"><span>青岛  </span><span>领地咖啡-大隐隐于市的室外桃园</span></div>
+                <div class="cut-img">
+                  <div class="cut-headImg"><img src="img/头像.png" alt=""></div>
+                  <div><img src="img/点赞.png" alt="" class="support">153</div>
+                  <div><img src="img/留言.png" alt="">32</div>
+                </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer-div">
+      <div class="col-3">
+           <h6>爱彼迎</h6>
+      <ul class="list-unstyled list-group">
+          <li><a href="javascript:;" class="text-muted font_small">工作机会</a></li>
+          <li><a href="javascript:;" class="text-muted font_small">政策</a></li>
+          <li><a href="javascript:;" class="text-muted font_small">爱彼迎新闻</a></li>
+          <li><a href="javascript:;" class="text-muted font_small">帮助</a></li>
+          <li><a href="javascript:;" class="text-muted font_small">多元化与归属感</a></li>
+          <li><a href="javascript:;" class="text-muted font_small">障碍实施无</a></li>
+      </ul>
+      </div>
+  
+      <div class="col-3">
+              <h6>发现</h6>
+         <ul class="list-unstyled list-group">
+             <li><a href="javascript:;" class="text-muted font_small">信任安全</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">旅行基金</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">爱彼迎公民</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">商务差旅</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">旅游指南</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">爱彼迎杂志</a></li>
+         </ul>
+         </div>
+  
+         <div class="col-3">
+              <h6>出租</h6>
+         <ul class="list-unstyled list-group">
+             <li><a href="javascript:;" class="text-muted font_small">为什么要出租</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">待客之道</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">房东义务</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">开展体验</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">Open Homes</a></li>
+  
+         </ul>
+         </div>
+  
+         <div class="col-3 ul4">
+              <img src="img/download1.png" alt="">
+              <img src="img/download2.png" alt="">
+         <ul class="list-unstyled list-group">
+             <li><a href="javascript:;" class="text-muted font_small">工作机会</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">政策</a></li>
+             <li><a href="javascript:;" class="text-muted font_small">爱彼迎新闻</a></li>
+         </ul>
+         </div>   
+  </div> 
+  <div class="ttext">
+      <b>开发团队：<<未来猿人>>&nbsp;©&nbsp;2019&nbsp;-&nbsp;8&nbsp;-&nbsp;1</b>
+  </div>  
+  <script src="js/banner.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/btn.js"></script>
+  <script src="js/xiaoyuan.js"></script>
+  <script src="js/jump.js"></script>
+</body>
+</html>

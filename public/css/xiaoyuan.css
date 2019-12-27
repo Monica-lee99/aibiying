@@ -1,0 +1,175 @@
+*{padding: 0;margin: 0;
+  box-sizing: border-box; 
+}
+div.container{
+  width: 1032px;height: 72px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+}div.area{
+  width: 100px;height: 72px;
+  float: left;
+  position: absolute;
+  
+}
+div.input{
+  width: 566px;height: 72px;
+  float: left;
+  left: 100px;
+  top: 0px;
+  position: absolute;
+  
+}
+div.date{
+  width: 268px;height: 72px;
+  left: 666px;top: 0px; 
+  position: absolute;
+}
+div.search{
+  width: 96px;height: 72px;
+  float: left;
+  left: 934px;top: 0px;
+  position: absolute;
+}
+.sel{
+  width: 100px;height: 72px;
+  line-height: 72px;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  font-size: 18px;
+  cursor: pointer;
+  color: #484848;
+}
+.inp{
+  width: 566px;height: 72px;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+}
+.dat{
+  width: 268px;height: 72px;
+  padding-left: 40px;
+  font-size: 18px;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  cursor: pointer;
+}
+.searc{
+  width: 96px;height: 72px;
+  line-height: 72px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.sear{
+  width: 68px;height: 48px;
+  background: #FF5A5F;
+  font-size: 18px;
+  font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+  color: white;
+  cursor: pointer;
+  border: #FF5A5F;
+  border-radius: 5px;
+}
+div.date>div>.select-date{
+  width: 544px;height: 280px;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.date>div{
+  width: 544px;height: 329px;
+  display: none;
+}
+div.date>div>.select-date>.date-header1{
+  width: 271px;height: 46px;
+  text-align: center;
+  line-height: 46px;
+}
+div.date>div>.select-date>.date-header2{
+  width: 271px;height: 46px;
+  text-align: center;
+  line-height: 46px;
+}
+.pno{
+  display: inline-block;
+}
+div.date-header1 span:hover,div.date-header2 span:hover{
+  color: green;
+  cursor: pointer;
+}
+.tab1,.tab2{
+  width: 272px;height: 240px;
+  margin-top: -7px;
+  border: 1px solid #e4e4e4;
+  margin-left: -1px;  
+  background: white;
+}
+.tab1>.a,.tab2>.a{
+  display: flex;
+  justify-content: space-around;
+  width: 272px;height: 30px;
+}
+.box{
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid #9e9e9e;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-top:4px;
+  background: white;
+}
+.week{
+  background: #00bcd4;
+}
+.curday{
+  background: #00bcd4;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.row>div:hover{
+  background: #ccc;
+}
+.date>img{
+  left:7px;top:22px;
+}
+.input>img{
+  left:7px;top:22px;
+}
+.sel{
+  padding-left: 10px;
+}
+.adv{
+  width: 566px;height: 150px;
+  border: 1px solid#ccc;  
+  text-align: center;
+  display: none;
+  background: white;
+}
+.adv>p{
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #484848;
+  margin-bottom: 10px;
+}
+hr{
+  width: 420px;
+  margin: 0 auto;
+}
+.adv>span{
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+span:hover{
+  color: green;
+}
+.leftYear{
+  margin-left: -20px;
+}
+.rightYear{
+  margin-right: 20px;
+}

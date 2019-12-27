@@ -1,0 +1,38 @@
+.r .r_size{
+  width: 50%;
+  height: 325px;
+  overflow: hidden;
+  float: left;
+}
+
+.l img:hover{
+  transform: scale(1.1); 
+}
+.l img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.r img:hover{
+  transform: scale(1.1); 
+}
+.r img{
+
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.l{
+  width: 50%;
+  height: 650px;
+  /* background: red; */
+  overflow: hidden;
+  float: left;
+}
+.r{
+  /* background: green; */
+  width: 50%;
+  height: 650px;
+  overflow: hidden;
+  float: right;
+  /* float: left; */
+}

@@ -1,0 +1,62 @@
+.header{
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+.header .header-left .logo{
+    box-sizing:border-box;
+    width: 80px;
+    height: 80px;
+    padding: 10px 24px;
+    /* line-height: 80px; */
+}
+
+.header .header-left img{
+    width: 34px;
+    height: 34px;
+    color: red;
+    /* color: #fff; */
+    line-height: 52px;
+}
+.header .search{
+    position: relative;
+    margin-left: -950px;
+}
+.header .search .search-img{
+    position: absolute;
+    top: 32px;
+    left: 19px;
+}
+.header .header-left input{
+    border: 1px solid #ebebeb;
+    outline: none;
+    width: 460px;
+    height: 48px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 17px;
+    padding-left: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header .header-right{
+    height: 80px;
+    line-height: 80px;
+}
+
+.header li{
+    padding: 0 8px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header li a {
+    color: #fff;
+}
+.header li:hover{
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}

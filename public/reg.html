@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册</title>
+  <link rel="stylesheet" href="css/com.css">
+  <link rel="stylesheet" href="css/reg.css">
+  <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+   <!-- logo -->
+   <div class="logo">
+    <a href="javascript:;"></a>
+    <p>爱 彼 迎</p>
+  </div>
+
+  <!-- 注册页面主体 -->
+  <div class="login-body">
+    <!-- 左侧表单模块 -->
+    <div class="login-left">
+      <h3>欢 迎 注 册</h3>
+        <div id="forms">
+        <div>
+          <input type="text" placeholder="用户名(6-12位字母或数字)" v-model="uname" id="uname">
+          <div :class="P_class1" v-html="msg1"></div>
+        </div>
+        <div>
+          <input type="password" placeholder="密码(6-12位字母或数字)" v-model="upwd" id="upwd">
+          <div :class="P_class2"  v-html="msg2"></div>
+        </div>
+        <div>
+          <input type="password" placeholder="确认密码" v-model="reg">
+          <div v-html="RegUpwd" :class="P_class4"></div>
+        </div>
+        <div>
+          <input type="text" placeholder="邮箱(正确的邮箱格式)" v-model="email" id="email">
+          <div :class="P_class3"  v-html="msg3"></div>
+        </div>
+        <div class="code">
+          <input type="text" value="" placeholder="请输入验证码（不区分大小写）" class="input-val" v-model="showNum"/>
+          <canvas id="canvas" width="100" height="43"></canvas>
+          <div :class="yan_class" v-html="msg4" id="yz"></div>       
+        </div>
+        <div class="code-box">
+          <input type="checkbox" v-model:checked="isAgree">
+          <span>已阅读并同意<a href="javascript:;">《志虎使用协议》</a></span>
+        </div>
+        <button :disabled="isAgree==false" @click="show">立即注册</button>
+      </div>
+      
+    </div>
+    <!-- 右侧模块 -->
+    <div class="login-right">
+        <p>使用以下方式登录</p>
+        <a href="javascript:;">QQ注册</a>
+        <a href="javascript:;">微博注册</a>
+        <a href="javascript:;">微信注册</a>
+        <p>已有账号？<a href="javascript:;" @click='login'>立即登录</a>
+    </div>
+  </div>
+  <!-- 页尾 -->
+  <div class="footer">
+      <div class="aby_link">
+      <a href="javascript:;">爱彼迎论坛.</a>
+      <a href="javascript:;">发现.</a>
+      <a href="javascript:;">移动应用.</a>
+      <a href="javascript:;">联系我们.</a>
+      <a href="javascript:;">来爱彼迎工作室.</a>
+      <a href="javascript:;">注册机构号</a>
+     </div> 
+      <b>开发团队：《WEB1908工作室》&nbsp;©&nbsp;2019&nbsp;-&nbsp;8&nbsp;-&nbsp;1</b>
+    </div>
+</div>
+  <script>
+    var vm=new Vue({
+      el:"#app",
+      data:{
+        isAgree:false,
+        uname:"",
+        upwd:"",
+        email:"",
+        reg:"",
+        // isRight:false,
+        P_class1:{
+          unameJg:false,
+          unameTg:false
+        },
+        P_class2:{
+          upwdJg:false,
+          upwdTg:false
+        },
+        P_class3:{
+          emailJg:false,
+          emailTg:false
+        },
+        P_class4:{
+          RegJg:false,
+          RegTg:false
+        },
+        yan_class:{
+          yanJg:false,
+          yanTg:false
+        },
+        msg1:"&nbsp",
+        msg2:"&nbsp",
+        msg3:"&nbsp",
+        msg4:"&nbsp",
+        RegUpwd:"&nbsp",
+        showNum:"",
+      },
+      methods: {
+        show(){
+          if(this.P_class1.unameJg || this.P_class2.upwdJg || this.P_class3.emailJg || this.P_class4.RegJg || this.yan_class.yanJg){
+              return
+          }else{
+            var $uname=uname.value;
+            var $upwd=upwd.value;
+            var $email=email.value;
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+            if(xhr.readyState === 4 && xhr.status === 200){             
+            var result=xhr.responseText;
+            var res=JSON.parse(result)
+            if(res.msg=='注册成功'){
+              window.location.href='http://127.0.0.1:8080/login.html'
+            }
+          }
+        }
+        xhr.open('post','/user/reg?uname='+$uname+'&upwd='+$upwd+'&email='+$email,true);
+        xhr.send()
+          }
+        },
+        login(){
+          window.location.href='http://127.0.0.1:8080/login.html'
+        }
+        
+      },
+      watch:{
+        uname(){
+          if(/^[0-9a-zA-z]{6,12}$/.test(this.uname)){
+            this.P_class1={
+              unameJg:false, unameTg:true
+            };
+            this.msg1="用户名格式正确"
+          }else if(this.uname==""){
+            this.P_class1={
+              unameJg:true, unameTg:false
+            };
+            this.msg1="用户名不能为空"
+          }else{
+            this.P_class1={
+              unameJg:true, unameTg:false
+            };
+            this.msg1="用户名格式不正确"
+          }
+        },
+        upwd(){
+           if(/^[0-9a-zA-z]{6,12}$/.test(this.upwd)){
+            this.P_class2={
+              upwdJg:false, upwdTg:true
+            };
+            this.msg2="密码格式正确"
+          }else if(this.upwd==""){
+            this.P_class2={
+              upwdJg:true, upwdTg:false
+            };
+            this.msg2="密码不能为空"
+          }else{
+            this.P_class2={
+              upwdJg:true, upwdTg:false
+            };
+            this.msg2="密码格式不正确"
+          }
+        },
+        email(){
+           if(/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(this.email)){
+            this.P_class3={
+              emailJg:false, emailTg:true
+            };
+            this.msg3="邮箱格式正确"
+          }else if(this.email==""){
+            this.P_class3={
+              emailJg:true, emilTg:false
+            };
+            this.msg3="邮箱不能为空"
+          }else{
+            this.P_class3={
+             emailJg:true,emailTg:false
+            };
+            this.msg3="邮箱格式不正确"
+          }
+        },
+        reg(){
+          if(this.reg!=this.upwd){
+            this.P_class4={
+              RegJg:true, RegTg:false
+            };
+            this.RegUpwd="密码必须一致"
+          }else{
+            this.P_class4={
+              RegJg:false, RegTg:true
+            };
+            this.RegUpwd="密码一致"
+          }
+        },
+        showNum(){
+          //console.log(show_num.join(""))
+          if(this.showNum==show_num.join("")){
+            this.yan_class={
+              yanJg:false, yanTg:true
+            };
+            this.msg4="验证码正确"
+          }else{
+            this.yan_class={
+              yanJg:true, yanTg:false
+            };
+            this.msg4="请输入正确验证码"
+          }
+        }
+      }
+    })
+  </script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/yzm.js"></script>
+</body>
+</html>
